@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addButton:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.complete-status {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.complete-status.complete {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.task-text {
+    flex: 1;
+    font-weight: bold;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.edit-btn {
+    color: #666;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.delete-btn {
+    color: #ff4444;
+    cursor: pointer;
+}
+
+.edit-btn { order: 1; }
+.task-text { order: 2; }
+.checkbox { order: 3; }
+.complete-status { order: 4; }
+.delete-btn { order: 5; margin-left: auto; }
+
+/* Remove margin from checkbox */
+.checkbox {
+    margin-right: 0;
+}
